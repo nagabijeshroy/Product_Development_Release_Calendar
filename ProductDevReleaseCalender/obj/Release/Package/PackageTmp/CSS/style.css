@@ -1,0 +1,247 @@
+﻿#Main_Page {
+    margin: 0px auto;
+    min-width: 500px;
+    min-height: 500px;
+    width: 100%;
+    height: 100%;
+}
+
+    #Main_Page #header {
+        font-family: Andalus;
+        font-weight: bold;
+        font-variant: small-caps;
+        background-color: #3E839C;
+        height: 10%;
+        font-size: xx-large;
+        color: white;
+        width: 100%;
+        float: left;
+    }
+
+    #Main_Page #Content {
+        height: 90%;
+        width: 100%;
+        float: left;
+    }
+
+        #Main_Page #Content #Button_Menu {
+            padding-top: 2%;
+            width: 100%;
+            height: 5%;
+        }
+
+            #Main_Page #Content #Button_Menu span {
+                width: 100px;
+                font-family: Georgia;
+                padding-right: 2em;
+            }
+
+                #Main_Page #Content #Button_Menu span input[type=button] {
+                    background: #3E839C;
+                    border-color: #3E839C;
+                    color: white;
+                    border-radius: 20%;
+                    font-weight: bold;
+                    padding: 0.5%;
+                }
+
+                #Main_Page #Content #Button_Menu span input[type=submit] {
+                    background: #3E839C;
+                    border-color: #3E839C;
+                    color: white;
+                    border-radius: 20%;
+                    font-weight: bold;
+                    padding: 0.5%;
+                }
+
+        #Main_Page #Content #Main_Content {
+            height: 100%;
+        }
+
+.AlternateColors {
+    width: 100%;
+    table-layout: fixed;
+    margin-top: 2%;
+    border-collapse: collapse;
+}
+
+    .AlternateColors td {
+        width: 3%;
+    }
+
+    .AlternateColors tr:first-child td:nth-child(2n+1) {
+        background-color: #8a88b4;
+    }
+
+    .AlternateColors tr td:first-child {
+        width: 10%;
+        font-size: x-small;
+    }
+
+    .AlternateColors .releaseName1 {
+        background-color: #9aaeb6;
+        text-align: center;
+        font-family: helvetica;
+        font-size: x-small;
+    }
+
+        .AlternateColors .releaseName1 td:nth-child(2n) {
+            background-color: #b8cfd8;
+        }
+
+            .AlternateColors .releaseName1 td:nth-child(2n):hover {
+                background-color: #3E839C;
+                color: white;
+                cursor: pointer;
+            }
+
+        .AlternateColors .releaseName1 td:nth-child(2n+1):hover {
+            background-color: #3E839C;
+            color: white;
+            cursor: pointer;
+        }
+
+    .AlternateColors .releaseName2 td:nth-child(2n) {
+        background-color: #9aaeb6;
+    }
+
+        .AlternateColors .releaseName2 td:nth-child(2n):hover {
+            background-color: #3E839C;
+            color: white;
+            cursor: pointer;
+        }
+
+    .AlternateColors .releaseName2 td:nth-child(2n+1):hover {
+        background-color: #3E839C;
+        color: white;
+        cursor: pointer;
+    }
+
+    .AlternateColors .releaseName2 {
+        background-color: #b8cfd8;
+        text-align: center;
+        font-family: helvetica;
+        font-size: x-small;
+    }
+
+    .AlternateColors tr td .deleteImage {
+        width: 15px;
+        height: 15px;
+        margin-left: 5px;
+    }
+
+    .AlternateColors tr td .manageImage {
+        width: 15px;
+        height: 15px;
+        margin-left: 5px;
+    }
+
+    .AlternateColors tr:first-child {
+        background-color: #b8b6e2;
+        text-align: center;
+        font-family: helvetica;
+        font-size: x-small;
+        font-weight: bold;
+    }
+
+    .AlternateColors .appName {
+        background-color: #b7bcd0;
+        font-weight: bold;
+        font-family: helvetica;
+        font-size: small;
+    }
+
+#loadSearchResults {
+    width: 100%;
+    table-layout: fixed;
+    margin-top: 2%;
+    border-collapse: collapse;
+    font-family: helvetica;
+    font-size: small;
+}
+
+    #loadSearchResults tr:first-child {
+        background-color: #b8b6e2;
+        text-align: center;
+        font-family: helvetica;
+        font-weight: bold;
+    }
+
+        #loadSearchResults tr:first-child td:nth-child(2n+1) {
+            background-color: #8a88b4;
+        }
+
+    #loadSearchResults tr td {
+        width: 17.5%;
+    }
+
+#month, #year {
+    width: 30%;
+    display: inline-block;
+    padding-top: 1%;
+}
+
+#TFS_Url {
+    width: 70%;
+}
+
+#loadSearchResults .relN1 {
+    background-color: #9aaeb6;
+    text-align: center;
+    font-family: helvetica;
+}
+
+    #loadSearchResults .relN1 td:nth-child(2n) {
+        background-color: #b8cfd8;
+    }
+
+#loadSearchResults .relN2 td:nth-child(2n) {
+    background-color: #9aaeb6;
+}
+
+#loadSearchResults .relN2 {
+    background-color: #b8cfd8;
+    text-align: center;
+    font-family: helvetica;
+}
+
+#loadSearchResults tr td:first-child {
+    width: 22.5%;
+}
+
+#loadSearchResults .apN {
+    background-color: #b7bcd0;
+    font-weight: Bold;
+    font-family: helvetica;
+    text-align: left;
+}
+
+.dialogLabel {
+    display: inline-block;
+    width: 20%;
+    font-family: Georgia;
+    font-size: large;
+}
+
+#releaseName, #day, #year, #month, #releaseStatus, #impacts, #TFS_Url, #applicationName {
+    font-family: Georgia;
+    font-size: large;
+}
+
+#conflictErrorMessage {
+    font-family: Georgia;
+    font-size: large;
+    color: red;
+}
+
+.AlternateColors tr td .deleteImage:hover {
+    margin-left: 5px;
+    position: relative;
+    background-color: #b7bcd0;
+}
+
+.AlternateColors tr td .manageImage:hover {
+    background-color: #b7bcd0;
+    position: relative;
+    margin-left: 5px;
+}

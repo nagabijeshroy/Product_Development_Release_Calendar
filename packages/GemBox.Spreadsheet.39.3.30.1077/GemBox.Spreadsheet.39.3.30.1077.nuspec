@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>GemBox.Spreadsheet</id>
+    <version>39.3.30.1077</version>
+    <authors>GemBox Software</authors>
+    <owners>GemBox Software</owners>
+    <licenseUrl>http://www.gemboxsoftware.com/Spreadsheet/Eula.rtf</licenseUrl>
+    <projectUrl>http://www.gemboxsoftware.com/Spreadsheet/Overview</projectUrl>
+    <iconUrl>http://www.gemboxsoftware.com/images/nugetgbs.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>GemBox.Spreadsheet is a .NET component that enables developers to read, write, convert and print spreadsheet files (XLSX, XLS, ODS, CSV, HTML, PDF or XPS) from their .NET applications using one simple API.</description>
+    <summary>GemBox.Spreadsheet is a .NET component for reading and writing spreadsheet files (XLSX, XLS, CSV, ODS, HTML, PDF and XPS).</summary>
+    <releaseNotes>- Fixed issue with reading pivot table worksheet source.
+- Fixed issue with custom number format ('mmm').
+- Fixed issue with formatting large number of cells.
+- Fixed issue with copying worksheet that has large range of merged cells.
+- Fixed issue with exporting DataGridViewImageCell that has ImageLayout set to Normal.
+- Improved CellRange.Clear() method's performance.
+- Fixed issue when writing cell value of type Int64/UInt64 to XLSX file.
+- Fixed issue when setting cell value of float type.
+- Added reading of hyperlink's default formatting in HTML.</releaseNotes>
+    <copyright>Copyright (c) GemBox Software 2015</copyright>
+    <tags>GemBox.Spreadsheet Excel XLSX XLS CSV ODS PDF Print OpenXml</tags>
+  </metadata>
+</package>

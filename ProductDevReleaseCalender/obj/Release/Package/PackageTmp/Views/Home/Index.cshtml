@@ -1,0 +1,105 @@
+﻿
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>
+        Product Development Release Calender
+    </title>
+    <link rel="icon"
+          type="image/png"
+          href="../../Images/s_poRCNA.png">
+    <script type="text/javascript" src="../JS/jquery.min.js"></script>
+    <script src="../JS/jquery-ui.js" type="text/javascript"></script>
+    <script src="../JS/selectivizr-min.js" type="text/javascript"></script>
+    <script src="../JS/selectivizr.js" type="text/javascript"></script>
+    <script src="../JS/json_sans_eval.js" type="text/javascript"></script>
+    <link href="../../CSS/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../CSS/style.css" />
+    <script src="../JS/pdrc.js" type="text/javascript"></script>
+    <script src="../JS/LoadTable.js" type="text/javascript"></script>
+    <script src="../JS/LoadDay.js" type="text/javascript"></script>
+</head>
+<body>
+    <form id="form1" method="post">
+        <div id="Main_Page">
+            <div id="header">
+                <img src="../Images/s_poRCNA.png" alt="logo" height="75" width="75" />Product Development Release Calender
+            </div>
+            <div id="Content">
+                <div id="Button_Menu">
+                    <span>
+                        <label id="Label2">Year:</label>
+                        <select name="YearDropDownList" id="YearDropDownList">
+                            <option value="">Year</option>
+                            <option value="2015">2015</option>
+                            <option value="2016">2016</option>
+                            <option value="2017">2017</option>
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                        </select>
+                    </span>
+                    <span>
+                        <label id="Label1">Month:</label>
+                        <select name="MonthDropDownList" id="MonthDropDownList">
+                            <option value="">Select Month</option>
+                            <option value="JAN">JAN</option>
+                            <option value="FEB">FEB</option>
+                            <option value="MAR">MAR</option>
+                            <option value="APR">APR</option>
+                            <option value="MAY">MAY</option>
+                            <option value="JUNE">JUNE</option>
+                            <option value="JULY">JULY</option>
+                            <option value="AUG">AUG</option>
+                            <option value="SEP">SEP</option>
+                            <option value="OCT">OCT</option>
+                            <option value="NOV">NOV</option>
+                            <option value="DEC">DEC</option>
+                        </select>
+                    </span>
+                    <!-- <span>
+                <input type="button" id="newApplication" name="newApplication" value="New Application" onclick="javascript: ShowPopup();" />
+            </span> -->
+                    <span>
+                        <input type="button" id="newRelease" name="newRelease" value="New Release" onclick="javascript: showPop();" />
+                    </span>
+                    
+                    <span>
+                        <label id="Label1">Application Name :</label>
+                        <select name="appName" id="appName">
+                            <option value="">Select Application</option>
+                            <option value="all">All</option>
+                            <option value="200001">A - Amgen VirMedica</option>
+                            <option value="200002">A - Novartis</option>
+                            <option value="200003">A - Clinical PPRP</option>
+                            <option value="200004">A - Genzyme</option>
+                            <option value="200005">A - PANF Portal</option>
+                            <option value="200006">A - eBR</option>
+                            <option value="200007">A - RxRescue</option>
+                            <option value="200008">A - Provider Portal</option>
+                            <option value="200009">A - Reporting Portal</option>
+                            <option value="200010">A - Web Configuration Tool</option>
+                            <option value="200011">A - Site Locator</option>
+                            <option value="200012">A - Patient Plus</option>
+                        </select>
+                    </span>
+                    <span><input type="button" name="searchApplication" id="searchApplication" value="Search" onclick="javascript: searchApp();" /></span>
+                   <span><input type="button" name="exportToExcel" id="exportToExcel" value="Export Data" onclick="javascript: exportExcel();" /></span>
+                </div>
+
+                    
+                <div id="Main_Content">
+                    <table id="Table1" class="AlternateColors"></table>
+                    <table id="loadSearchResults"></table>
+                    <div id="loadTable"></div>
+                    <div id="loadScript"></div>
+                </div>
+                
+            </div>
+            <div id="displayData"></div>
+        </div>
+        <div id="dialog2" style="display: none"></div>
+    </form>
+</body>
+</html>
